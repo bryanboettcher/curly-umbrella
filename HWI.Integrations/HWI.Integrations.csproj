@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
+    <Authors>HWI Developers</Authors>
+    <Company>Henry Wurst, Inc</Company>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="HWI.Internal" Version="1.0.51" />
+  </ItemGroup>
+
+</Project>

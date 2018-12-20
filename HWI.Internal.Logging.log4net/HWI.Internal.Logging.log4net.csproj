@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>HWI Developers</Authors>
+    <Company>Henry Wurst, Inc</Company>
+    <Product>HWI Internal Logging - log4net</Product>
+    <Description>Wraps the log4net library in HWI Internal namespacing</Description>
+    <Version>1.0.1</Version>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HWI.Internal\HWI.Internal.csproj" />
+  </ItemGroup>
+
+</Project>

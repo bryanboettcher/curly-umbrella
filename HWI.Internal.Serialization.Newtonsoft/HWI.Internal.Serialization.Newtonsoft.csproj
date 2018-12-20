@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>HWI Developers</Authors>
+    <Company>Henry Wurst, Inc</Company>
+    <Product>HWI Internal Serialization - Newtonsoft</Product>
+    <Description>Wraps the Newtonsoft JSON.NET library in HWI Internal namespacing</Description>
+    <Version>1.0.1</Version>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HWI.Internal\HWI.Internal.csproj" />
+  </ItemGroup>
+
+</Project>
